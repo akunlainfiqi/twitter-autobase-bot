@@ -21,8 +21,10 @@ const bot = new TwitterBot({
     triggerWord: process.env.TRIGGER
 });
 
+console.log(process.env.CONSUMER_KEY);
+
 const job = new CronJob(
-    '0 */3 * * * *',
+    '0 */2 * * * *',
     doJob,
     onComplete,
     true

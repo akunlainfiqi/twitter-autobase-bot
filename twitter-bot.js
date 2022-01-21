@@ -80,6 +80,7 @@ class TwitterBot {
                         resolve(lastMessage);
                     } else {
                         reject('error on get direct message');
+                        console.log(data);
                     }
                 } catch (error) {
                     reject(error);
