@@ -12,8 +12,6 @@ const bot = new TwitterBot({
     triggerWord: process.env.TRIGGER
 });
 
-console.log(process.env.CONSUMER_KEY);
-
 exports.handler = async function() {
     console.log(`execute @ ${new Date().toTimeString()}`);
     let tempMessage = {};
